@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+//import {basics} from "@/cv.json"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+		:root{
+			color-scheme:;
+		}
+
+	@font-face {
+		font-family: "Gunken";
+		font-style: normal;
+		font-weight: 100 1000;
+		font-display: swap;
+		src: url("/font/Gunken.woff2") format("woff2");
+	}
+
+	@font-face {
+		font-family: "Melon";
+		font-style: normal;
+		font-weight: 100 1000;
+		font-display: swap;
+		src: url("/font/Melon Fruit.woff2") format("woff2");
+	}
+
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		font-family: Melon, system-ui, sans-serif;
+	}
+</style>
