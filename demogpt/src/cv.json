@@ -2,38 +2,39 @@
   "basics": {
     "name": "Valentina Pinto",
     "label": "Full Stack Developer",
-    "image": "https://avatars.githubusercontent.com/u/12345678?v=4",
-    "email": "juan.martinez@email.com",
-    "phone": "+34 600123456",
-    "url": "https://juanmartinez.dev",
-    "summary": "Apasionado por la tecnología y el desarrollo de soluciones innovadoras en web y software. Experiencia en proyectos multidisciplinarios y liderazgo técnico.",
+    "image": "https://avatars.githubusercontent.com/u/204514358?s=400&u=a15b6bc5029778195bbf19b7b687d1909e7d5d11&v=4",
+    "email": "anyelipinto05@email.com",
+    "phone": "+57 304 283 6130",
+    "url": "https://anyelipinto.dev",
+    "summary": "Apasionada por la tecnología y el desarrollo de soluciones innovadoras en web y software. Experiencia en proyectos multidisciplinarios y liderazgo técnico.",
     "location": {
-      "address": "Calle Mayor 123",
-      "postalCode": "28001",
       "city": "Pasto",
+      "region": "Colombia",
       "countryCode": "ES",
-      "region": "Colombia"
+      "address": "Calle Mayor 123",
+      "postalCode": "28001"
     },
+    
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "juanmartinez",
-        "url": "https://linkedin.com/in/juanmartinez"
+        "username": "anyelipinto",
+        "url": "https://www.linkedin.com/in/anyelipinto/"
       },
       {
         "network": "GitHub",
-        "username": "juanmartinezdev",
-        "url": "https://github.com/juanmartinezdev"
+        "username": "Haru-VP",
+        "url": "https://github.com/Haru-VP"
       }
     ]
   },
+
   "work": [
     {
       "name": "TechNova",
       "position": "Desarrollador Full Stack",
       "url": "https://technova.com",
       "startDate": "2022-02-01",
-      "endDate": null,
       "summary": "Desarrollo de aplicaciones web modernas y escalables usando tecnologías de vanguardia.",
       "highlights": [
         "Implementación de microservicios",
@@ -64,6 +65,7 @@
       ]
     }
   ],
+
   "volunteer": [
     {
       "organization": "Code4Good",
@@ -72,26 +74,23 @@
       "startDate": "2020-01-01",
       "endDate": "2021-12-01",
       "summary": "Mentoría a jóvenes desarrolladores en proyectos sociales.",
-      "highlights": [
-        "Organización de talleres"
-      ]
+      "highlights": ["Organización de talleres"]
     }
   ],
+
   "education": [
     {
-      "institution": "Universidad Politécnica de Madrid",
-      "url": "https://www.upm.es/",
+      "institution": "Universidad Autónoma de Nariño",
+      "url": "https://www.aunar.edu.co/",
       "area": "Ingeniería Informática",
       "studyType": "Grado",
-      "startDate": "2010-09-01",
-      "endDate": "2014-06-01",
+      "startDate": "2021-08-01",
+      "endDate": "Actualidad",
       "score": "8.5",
-      "courses": [
-        "Programación Avanzada",
-        "Bases de Datos"
-      ]
+      "courses": ["Programación Avanzada", "Bases de Datos"]
     }
   ],
+
   "awards": [
     {
       "title": "Premio al Mejor Proyecto Web",
@@ -100,6 +99,7 @@
       "summary": "Reconocimiento por el desarrollo de una plataforma innovadora."
     }
   ],
+
   "certificates": [
     {
       "name": "Certificado en JavaScript Moderno",
@@ -108,6 +108,7 @@
       "url": "https://openwebinars.net/certificado-js"
     }
   ],
+
   "publications": [
     {
       "name": "Desarrollo Web con React",
@@ -117,191 +118,98 @@
       "summary": "Guía práctica para crear aplicaciones web con React."
     }
   ],
-  "skills": [
+
+   "skills": [
     {
-      "name": "HTML",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend"
+      "category": "Frontend",
+      "items": [
+        { "name": "HTML", "level": "Avanzado" },
+        { "name": "CSS", "level": "Avanzado" },
+        { "name": "JavaScript", "level": "Avanzado" },
+        { "name": "TypeScript", "level": "Avanzado" },
+        { "name": "React", "level": "Avanzado" },
+        { "name": "Next.js", "level": "Intermedio" }
       ]
     },
     {
-      "name": "CSS",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Diseño Responsive"
+      "category": "Backend",
+      "items": [
+        { "name": "Node.js", "level": "Avanzado" },
+        { "name": "MySQL", "level": "Intermedio" }
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Backend",
-        "JavaScript",
-        "Servidor"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermedio",
-      "keywords": [
-        "Bases de Datos",
-        "SQL",
-        "Almacenamiento de Datos",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
+      "category": "Herramientas",
+      "items": [
+        { "name": "Git", "level": "Avanzado" },
+        { "name": "GitHub", "level": "Avanzado" }
       ]
     }
   ],
+
   "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced"
-    }
+    { "language": "Spanish", "fluency": "Native speaker" },
+    { "language": "English", "fluency": "Advanced" }
   ],
+
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "keywords": ["Ferrets", "Unicorns"]
     }
   ],
+
   "references": [
     {
       "name": "Carlos Gómez",
       "reference": "Carlos fue mi supervisor en TechNova y puede dar referencias sobre mi trabajo y desempeño profesional."
     }
   ],
+
   "projects": [
     {
       "name": "codes",
-      "isActive": true,
       "description": "Historia interactiva con retos de programación para viajar a Marte",
-      "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
-      ],
-      "url": "https://codes.dev"
+      "url": "https://codes.dev",
+      "highlights": ["Elige tu propia aventura", "En desarrollo"]
     },
     {
       "name": "programacion",
-      "isActive": true,
       "description": "Retos de programación para todos los niveles",
-      "highlights": [
-        "Más de un millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://programacion.dev"
+      "url": "https://programacion.dev",
+      "highlights": ["Más de un millón de visitas", "Multidioma", "JavaScript & TypeScript"]
     },
     {
       "name": "proyectosdesarrollo",
-      "isActive": true,
       "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://proyectosdesarrollo.dev"
+      "url": "https://proyectosdesarrollo.dev",
+      "highlights": ["+2000 usuarios activos", "Retos para cualquier lenguaje"]
     },
     {
       "name": "codi.link",
-      "isActive": true,
       "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
       "url": "https://codi.link",
-      "github": "https://github.com/codi-link"
+      "github": "https://github.com/codi-link",
+      "highlights": ["100k visitas al mes", "Desarrollado por la comunidad"]
     },
     {
       "name": "Pruebas Técnicas",
-      "isActive": true,
       "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 pruebas disponibles"
-      ],
       "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/pruebastecnicas"
+      "github": "https://github.com/pruebastecnicas",
+      "highlights": ["100% gratuito", "+500 pruebas disponibles"]
     },
     {
       "name": "ponencia",
       "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://paginaweb.com"
+      "url": "https://paginaweb.com",
+      "highlights": ["+15k tickets repartidos", "+50k espectadores en directo"]
     }
-  ]
+  ],
+
+  "meta": {
+    "theme": "modern",
+    "layout": "two-column",
+    "icons": true
+  }
 }

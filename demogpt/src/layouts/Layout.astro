@@ -1,6 +1,15 @@
 ---
 import "../styles/global.css";
-//import {basics} from "@/cv.json"
+import { basics } from "../cv.json"; 
+import Footer from "../components/Footer.astro";
+
+
+interface Props {
+	title: string;
+}
+
+const { title }= Astro.props;
+const { image, summary }=basics
 ---
 
 <!doctype html>
@@ -13,7 +22,12 @@ import "../styles/global.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<slot />
+		<div class="page-container">
+            <main>
+                <slot />
+            </main>
+            <Footer />
+        </div>
 	</body>
 </html>
 
@@ -40,9 +54,12 @@ import "../styles/global.css";
 
 	html,
 	body {
+		font-size: 30px;
 		margin: 0;
 		width: 100%;
 		height: 100%;
 		font-family: Melon, system-ui, sans-serif;
 	}
+
+	
 </style>

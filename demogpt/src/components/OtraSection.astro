@@ -1,0 +1,153 @@
+---
+import cv from "../cv.json";
+const { basics, work, education, skills, projects, awards, certificates, publications, volunteer, languages, interests, references } = cv;
+---
+
+<div class="max-w-5xl mx-auto px-6 py-10 space-y-12 font-sans">
+  <!-- PERFIL -->
+  <section class="text-center space-y-4">
+    <img src={basics.image} alt={basics.name} class="w-28 h-28 rounded-full mx-auto shadow-lg" />
+    <h2 class="text-3xl font-bold">{basics.name}</h2>
+    <p class="text-lg text-gray-600">{basics.label}</p>
+    <p class="max-w-2xl mx-auto text-gray-700">{basics.summary}</p>
+    <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+      <a href={`mailto:${basics.email}`} class="hover:text-blue-600">{basics.email}</a>
+      <span>|</span>
+      <span>{basics.phone}</span>
+      <span>|</span>
+      <span>{basics.location.city}, {basics.location.region}</span>
+    </div>
+    <div class="flex justify-center gap-6 mt-4">
+      {basics.profiles.map(profile => (
+        <a href={profile.url} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+          {profile.network}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-6">Experiencia Laboral</h2>
+    <div class="grid gap-6">
+      {work.map(({name, startDate, endDate, position, summary, highlights, url}) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Actualidad";
+        return (
+          <article class="p-5 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition bg-white">
+            <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+              <h3 class="text-xl font-bold">
+                {url 
+                  ? <a href={url} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">{name}</a>
+                  : name}
+              </h3>
+              <span class="text-sm text-gray-500">{startYear} - {endYear}</span>
+            </header>
+            <h4 class="text-md font-semibold text-gray-700">{position}</h4>
+            <p class="text-gray-600 mt-2">{summary}</p>
+            {highlights && (
+              <ul class="list-disc list-inside mt-2 text-gray-500">
+                {highlights.map((h, i) => <li key={i}>{h}</li>)}
+              </ul>
+            )}
+          </article>
+        )
+      })}
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-6">Educación</h2>
+    {education.map(edu => (
+      <article class="mb-4">
+        <h3 class="text-lg font-bold">
+          <a href={edu.url} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">{edu.institution}</a>
+        </h3>
+        <p class="text-gray-600">{edu.studyType} en {edu.area} ({edu.startDate} - {edu.endDate})</p>
+        <p class="text-sm text-gray-500">Nota: {edu.score}</p>
+        <ul class="list-disc list-inside text-gray-500">
+          {edu.courses.map((c, i) => <li key={i}>{c}</li>)}
+        </ul>
+      </article>
+    ))}
+  </section>
+
+
+<section>
+  <h2 class="text-2xl font-semibold mb-6">Habilidades</h2>
+  <div class="space-y-6">
+    {skills.map(skillGroup => (
+      <div>
+        <h3 class="text-xl font-bold mb-3">{skillGroup.category}</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          {skillGroup.items.map(item => (
+            <div class="p-4 bg-gray-50 rounded-lg shadow-sm text-center">
+              <p class="font-semibold">{item.name}</p>
+              <p class="text-sm text-gray-500">{item.level}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+  <!-- PROYECTOS -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-6">Proyectos</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      {projects.map(project => (
+        <article class="p-5 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition bg-white">
+          <h3 class="text-lg font-bold">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">{project.name}</a>
+          </h3>
+          <p class="text-gray-600 mt-1">{project.description}</p>
+          {project.highlights && (
+            <ul class="list-disc list-inside mt-2 text-gray-500">
+              {project.highlights.map((h, i) => <li key={i}>{h}</li>)}
+            </ul>
+          )}
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline mt-2 block">GitHub</a>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Premios</h2>
+      {awards.map(award => (
+        <article class="mb-3">
+          <h3 class="font-bold">{award.title}</h3>
+          <p class="text-sm text-gray-500">{award.awarder} - {award.date}</p>
+          <p class="text-gray-600">{award.summary}</p>
+        </article>
+      ))}
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Certificados</h2>
+      {certificates.map(cert => (
+        <article class="mb-3">
+          <h3 class="font-bold">
+            <a href={cert.url} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">{cert.name}</a>
+          </h3>
+          <p class="text-sm text-gray-500">{cert.issuer} - {cert.date}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-semibold mb-6">Idiomas</h2>
+    <ul class="flex flex-wrap gap-4 text-gray-600">
+      {languages.map(lang => (
+        <li class="px-3 py-1 bg-gray-100 rounded-lg shadow-sm">{lang.language} - {lang.fluency}</li>
+      ))}
+    </ul>
+  </section>
+</div>
