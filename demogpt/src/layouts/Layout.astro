@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import { basics } from "../cv.json"; 
 import Footer from "../components/Footer.astro";
+import Humo from "../components/Humo.astro";
+
 
 
 interface Props {
@@ -22,19 +24,21 @@ const { image, summary }=basics
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		
 		<div class="page-container">
             <main>
                 <slot />
             </main>
+			<Humo/>
             <Footer />
         </div>
 	</body>
 </html>
 
-<style>
-		:root{
-			color-scheme:;
-		}
+<style is:global>
+	:root{
+		color-scheme:;
+	}
 
 	@font-face {
 		font-family: "Gunken";
@@ -52,8 +56,7 @@ const { image, summary }=basics
 		src: url("/font/Melon Fruit.woff2") format("woff2");
 	}
 
-	html,
-	body {
+	html {
 		font-size: 30px;
 		margin: 0;
 		width: 100%;
